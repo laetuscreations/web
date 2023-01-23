@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Stark Industries",
+      "url": "https://www.starkindustries.com",
+      "logo": "stark.svg"
+    },
+    {
+      "name": "Google",
+      "url": "http://www.google.com",
+      "logo": "google.svg"
+    },
+    {
+      "name": "Wayne Enterprises",
+      "url": "https://www.wayneenterprises.com",
+      "logo": "wayne.svg"
+    },
+    {
+      "name": "Meta",
+      "url": "https://about.meta.com",
+      "logo": "meta.svg"
+    },
+    {
+      "name": "Tesla",
+      "url": "https://www.tesla.com",
+      "logo": "tesla.svg"
+    }
+  ]
+  

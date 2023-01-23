@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Laetus</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-items">
+        <div class="logo">
+          <a href="#">
+            <img src="images/leatus-logo.svg" alt="" class="logo" />
+          </a>
+        </div>
+        <a class="hamburger">
+          <!-- close icon -->
+          <img src="images/ui-icons/close-icon.svg" alt="" />
+          <!-- Open icon -->
+          <img src="images/ui-icons/nav-menu-icon.svg" alt="" />
+        </a>
+        <div>
+          <a href="#services"> Services </a>
+          <a href="#projects"> Projects </a>
+          <a href="#testimonials"> About </a>
+          <a href="#contact"> Contact </a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container header-items">
+        <div class="header-content">
+          <h1>A Design Agency for the <span> Digital Era</span></h1>
+          <p>
+            Laetus is a freelance company that give your publicity a
+            professional touch by branding it and adding research, design, and
+            content
+          </p>
+          <a class="cta" href="#contact"> Connect with Us </a>
+        </div>
+        <div class="header-img">
+          <img src="images/astro.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Clients -->
+    <section id="clients">
+      <div class="container">
+        <h2>Our Valuable Clients</h2>
+        <div class="clients"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div id="projects-carousel">
+          <img class="carousel-button carousel-button-prev" src="images/ui-icons/arrow-left.svg" alt="Previous">
+          <img class="carousel-button carousel-button-next" src="images/ui-icons/arrow-right.svg" alt=""></div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-body">
+          <img src="../../assets/Contact.svg" alt="" />
+          <div class="contact-form">
+            <form>
+              <fieldset>
+                <label for="name">Hi, I'm</label>
+                <input type="text" name="name" placeholder="Your name" />
+              </fieldset>
+              <fieldset>
+                <label for="email">Reach me at</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="abc@example.com"
+                />
+              </fieldset>
+              <fieldset class="msg">
+                <label for="msg">Here is what I have to say</label>
+                <textarea name="msg" placeholder="Your message"></textarea>
+              </fieldset>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-mediums">
+          <div class="phone">
+            <h3>Phone</h3>
+            <a href="tel:+917025467544">+91 7025 467 544</a>
+            <br />
+            <a href="tel:+918542216452">+91 8542 216 452</a>
+          </div>
+          <div class="social">
+            <a href="https://wa.me/+917025467544" target="_blank">
+              <img src="../../assets/ui-icons/whatsapp-icon.svg" alt="" />
+            </a>
+            <a
+              href="https://www.instagram.com/laetus_creations/"
+              target="_blank"
+            >
+              <img src="../../assets/ui-icons/instagram-icon.svg" alt="" />
+            </a>
+            <a href="mailto:laetuscreation@gmail.com" target="_blank">
+              <img src="../../assets/ui-icons/mail-icon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+  </body>
+</html>

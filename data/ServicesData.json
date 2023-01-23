@@ -1,0 +1,27 @@
+[
+    {
+      "id": "0",
+      "img": "brush.svg",
+      "title": "Graphic Designing",
+      "desc": "We produce the most innovative and top-quality designs to draw in the top clients. Our up-to-date designs match with the likes of your customers in the best way and give your company a trendy touch."
+    },
+    {
+      "id": "1",
+      "img": "monitor.svg",
+      "title": "UI/UX Designing",
+      "desc": "For the best user experience, we build high-quality user interfaces for mobile apps and web products. Every design we create is enhanced by a professional touch."
+    },
+    {
+      "id": "2",
+      "img": "cam.svg",
+      "title": "Digital Marketing Services",
+      "desc": "Our marketing strategies will guide your business to acquire the most valuable spot in the global market. The carefully planned strategies always give you the best branding for your company."
+    },
+    {
+      "id": "3",
+      "img": "box.svg",
+      "title": "Product Design",
+      "desc": "Whether you are rebuilding the product or starting from the scratch, we provide the best designs and strategies for your product. The cost-efficient, reliable and trustworthy agency works for you."
+    }
+  ]
+  
