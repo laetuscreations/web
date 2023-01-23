@@ -692,7 +692,7 @@ header {
   margin: 0;
 }
 
-.welcome-container img {
+.astro-laptop {
   width: 25vw;
   height: 25vw;
 }
@@ -722,4 +722,25 @@ header {
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-container header {
+    width: 70vw;
+  }
+
+  .astro-laptop {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .welcome-container header {
+    justify-content: center;
+  }
+
+  .astro-laptop {
+    display: none;
+  }
 }
