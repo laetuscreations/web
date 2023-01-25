@@ -179,12 +179,7 @@ nav ul li:last-child a {
   border-radius: 10rem;
 }
 
-nav ul li a:hover {
-  color: var(--primary-color);
-}
-
 nav ul li:last-child a:hover {
-  color: #fff;
   transform: scale(1.05);
 }
 
