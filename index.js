@@ -1,52 +1,86 @@
+/// [nav]
+(($) =>
+  // Begin jQuery
+  $(function () {
+    // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $("nav ul li a:not(:only-child)").click(function (e) {
+      $(this).siblings(".nav-dropdown").toggle();
+      // Close one dropdown when selecting another
+      $(".nav-dropdown").not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $("html").click(() => $(".nav-dropdown").hide());
+    // Toggle open and close nav styles on click
+    $("#nav-toggle").click(() => $("nav ul").slideToggle());
+    // Hamburger to X toggle
+    $("#nav-toggle").on("click", () => this.classList.toggle("active"));
+
+    const mq = window.matchMedia("(max-width: 800px)");
+    $("nav ul li").click(() => {
+      if (mq.matches) {
+          $("nav ul").slideToggle();
+      }
+  });
+
+  }))(jQuery); // end jQuery
+
 /// [clients]
 fetch("data/ClientsList.json")
-  .then(response => response.json())
-  .then(data => {
-        const clientsContainer = document.getElementById('clients').querySelector('.clients');
-        data.forEach(client => {
-            const newClient = document.createElement('a');
-      newClient.className = 'client';
+  .then((response) => response.json())
+  .then((data) => {
+    const clientsContainer = document
+      .getElementById("clients")
+      .querySelector(".clients");
+    data.forEach((client) => {
+      const newClient = document.createElement("a");
+      newClient.className = "client";
       newClient.href = client.url;
-            const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = `images/clients/${client.logo}`;
       img.alt = client.name;
-            newClient.appendChild(img);
-            clientsContainer.appendChild(newClient);
+      newClient.appendChild(img);
+      clientsContainer.appendChild(newClient);
     });
   });
 
 /// [services]
-fetch('data/ServicesData.json')
-.then(response => response.json())
-.then(data => {
-    const servicesContainer = document.getElementById('services').querySelector('.services-grid');
-    data.forEach(service => {
-        const newService = document.createElement('div');
-    newService.className = 'services-item';
-        const img = document.createElement('img');
-    img.className = 'service-icon';
-    img.src = `images/services/${service.img}`;
-        const title = document.createElement('h3');
-    title.textContent = service.title;
-        const desc = document.createElement('p');
-    desc.textContent = service.desc;
-        const detailContainer = document.createElement('div');
-    detailContainer.className = 'services-details';
-        detailContainer.appendChild(title);
-    detailContainer.appendChild(desc);
-        newService.appendChild(img);
-    newService.appendChild(detailContainer);
-        servicesContainer.appendChild(newService);
+fetch("data/ServicesData.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const servicesContainer = document
+      .getElementById("services")
+      .querySelector(".services-grid");
+    data.forEach((service) => {
+      const newService = document.createElement("div");
+      newService.className = "services-item";
+      const img = document.createElement("img");
+      img.className = "service-icon";
+      img.src = `images/services/${service.img}`;
+      const title = document.createElement("h3");
+      title.textContent = service.title;
+      const desc = document.createElement("p");
+      desc.textContent = service.desc;
+      const detailContainer = document.createElement("div");
+      detailContainer.className = "services-details";
+      detailContainer.appendChild(title);
+      detailContainer.appendChild(desc);
+      newService.appendChild(img);
+      newService.appendChild(detailContainer);
+      servicesContainer.appendChild(newService);
+    });
   });
-});
 
 /// [Projects]
 
 fetch("data/ProjectsData.json")
-  .then(response => response.json())
-  .then(data => {
-    const carouselContainer = document.getElementById("projects").querySelector("#projects-carousel");
-    data.forEach(project => {
+  .then((response) => response.json())
+  .then((data) => {
+    const carouselContainer = document
+      .getElementById("projects")
+      .querySelector("#projects-carousel");
+    data.forEach((project) => {
       const newProject = document.createElement("div");
       newProject.className = "carousel-item";
       const img = document.createElement("img");
@@ -76,28 +110,32 @@ fetch("data/ProjectsData.json")
     currentIndex = 0;
     updateCarousel();
   })
-  .catch(error => {
+  .catch((error) => {
     console.error("Error fetching JSON data:", error);
   });
 
-document.querySelector(".carousel-button-prev").addEventListener("click", function() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = carouselItems.length - 1;
-  }
-  updateCarousel();
-});
+document
+  .querySelector(".carousel-button-prev")
+  .addEventListener("click", function () {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = carouselItems.length - 1;
+    }
+    updateCarousel();
+  });
 
-document.querySelector(".carousel-button-next").addEventListener("click", function() {
-  currentIndex++;
-  if (currentIndex >= carouselItems.length) {
-    currentIndex = 0;
-  }
-  updateCarousel();
-});
+document
+  .querySelector(".carousel-button-next")
+  .addEventListener("click", function () {
+    currentIndex++;
+    if (currentIndex >= carouselItems.length) {
+      currentIndex = 0;
+    }
+    updateCarousel();
+  });
 
 function updateCarousel() {
-  carouselItems.forEach(function(item) {
+  carouselItems.forEach(function (item) {
     item.style.display = "none";
   });
   carouselItems[currentIndex].style.display = "flex";

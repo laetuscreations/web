@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Laetus</title>
   </head>
   <body>
-    <nav>
-      <div class="container nav-items">
-        <div class="logo">
-          <a href="#">
-            <img src="images/leatus-logo.svg" alt="" class="logo" />
-          </a>
+    <!-- [ NAVBAR ] -->
+    <div class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#"><img src="images/leatus-logo.svg" alt="" class="logo" /></a>
         </div>
-        <a class="hamburger">
-          <!-- close icon -->
-          <img src="images/ui-icons/close-icon.svg" alt="" />
-          <!-- Open icon -->
-          <img src="images/ui-icons/nav-menu-icon.svg" alt="" />
-        </a>
-        <div>
-          <a href="#services"> Services </a>
-          <a href="#projects"> Projects </a>
-          <a href="#testimonials"> About </a>
-          <a href="#contact"> Contact </a>
-        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#clients">Clinets</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </div>
+    <!-- NAVBAR END -->
+
     <header>
       <div class="container header-items">
         <div class="header-content">

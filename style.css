@@ -120,139 +120,230 @@ select {
   color: var(--primary-color);
 }
 
-/* Navbar */
-
+/* Navigation */
 nav {
-  padding: 1rem;
-  position: fixed;
-  width: 100vw;
-  backdrop-filter: blur(20px);
-  z-index: 3;
-  background-color: #ffffff80;
+  float: right;
 }
 
-.nav-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+flex-direction: column;
+align-content: center;
+align-items: center;
 }
 
-.logo {
-  width: 6rem;
-  z-index: 1;
+nav ul li {
+  float: left;
+  position: relative;
 }
 
-.nav-links {
-  display: flex;
-  gap: 5rem;
-}
-
-.nav-links a {
-  color: #000;
-  font-size: 2.2rem;
+nav ul li a {
+  display: block;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  color: #463f3f;
+  text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s ease-out;
 }
-
-.nav-links a:not(:last-child) {
-  border-bottom: 3px solid transparent;
-  border-top: 3px solid transparent;
+nav ul li a {
+  text-decoration: none;
+  position: relative;
 }
-
-.nav-links a:not(:last-child):hover {
-  transform: translateY(-0.1rem);
-  border-bottom-color: var(--primary-color);
-}
-
-.nav-links a:last-child {
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
   background-color: var(--primary-color);
-  color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 5rem;
-  font-size: 1.8rem;
-  font-weight: 500;
+  transition: all ease-out 0.4s;
 }
 
-.nav-links a.active {
-  border-color: var(--primary-color);
+nav ul li:last-child a::before {
+  content: none;
 }
 
-.hamburger {
+nav ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+nav ul li:last-child a {
+  background: var(--primary-color);
+  padding: 0.8rem 2rem;
+  margin: 1.2rem 0.5rem;
+  color: #fff;
+  border-radius: 10rem;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+nav ul li:last-child a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+
+nav ul li ul li {
+  min-width: 190px;
+}
+
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  /* Guarantees that the dropdown will display on top of any content. */
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   display: none;
 }
 
-@media (max-width: 992px) {
-  .logo {
-    width: 4rem;
-  }
-
-  .nav-links a {
-    font-size: 1.8rem;
-  }
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(10px);
+  height: 70px;
+  width: 70px;
 }
 
-@media (max-width: 576px) {
-  .hamburger {
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
     display: block;
-    width: 3rem;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 25px;
-    transform: translateY(-50%);
-    z-index: 2;
   }
 
-  .nav-links {
-    gap: 3rem;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    flex-direction: column;
+  .nav-list {
+    background-color: white;
+    padding: 0 1rem 2rem;   
+  }
+
+  nav {
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    animation: 0.7s slidein;
+    padding: 70px 0 15px;
   }
 
-  .nav-links.expanded {
-    display: flex;
-    background-color: rgb(10, 10, 10);
+  nav ul {
+    display: none;
   }
 
-  .nav-links a {
-    color: white;
-    font-size: 2.5rem;
-    animation: 1s slidein2;
+  nav ul li {
+    float: none;
   }
 
-  .nav-links a:last-child {
-    font-size: 2.5rem;
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+
+  nav ul li ul li a {
+    padding-left: 30px;
   }
 }
-
-@keyframes slidein {
-  from {
-    transform: translateY(-100%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
 }
 
-@keyframes slidein2 {
-  from {
-    transform: translateY(-1000%);
-  }
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
 
-  to {
-    transform: translateY(0);
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
   }
+}
+/* 
+.navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
+*/
+.navigation {
+  height: 70px;
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/*
+.nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
+*/
+.nav-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+.brand a,
+.brand a:visited {
+  color: #463f3f;
+  text-decoration: none;
+}
+
+.logo {
+  width: 4rem;
+  z-index: 1;
+  margin: 1rem 0 0 0;
 }
 
 /* Hero */
