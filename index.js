@@ -138,7 +138,9 @@ function updateCarousel() {
   carouselItems.forEach(function (item) {
     item.style.display = "none";
   });
+  $(carouselItems[currentIndex]).animate({opacity: '0'}, 0);
   carouselItems[currentIndex].style.display = "flex";
+  $(carouselItems[currentIndex]).animate({opacity: '1'});
 }
 
 /// [Testimonials]
@@ -190,5 +192,7 @@ function updateTestimonialCarousel() {
   testimonialItems.forEach(function (item) {
     item.style.display = "none";
   });
+  $(testimonialItems[currentTestimonial]).animate({opacity: '0'}, 0);
   testimonialItems[currentTestimonial].style.display = "flex";
+  $(testimonialItems[currentTestimonial]).animate({opacity: '1'});
 }
