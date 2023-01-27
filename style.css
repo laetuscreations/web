@@ -389,12 +389,67 @@ header {
 .cta {
   margin-top: 2rem;
   color: white;
-  background-color: var(--primary-color);
+  background-image: linear-gradient(to right, #667eea, var(--primary-color));
   padding: 1rem 2rem;
   border-radius: 5rem;
   font-size: 1.8rem;
   font-weight: 500;
   display: inline-block;
+  text-align: center;
+  background-size: 200% 100%;
+  transition: all 0.2s ease-out;
+}
+
+.cta:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 10px hsla(261, 94%, 61%, 0.3);
+}
+
+.cta span {
+  display: inline-block;
+  min-width: 0.3em;
+  text-transform: uppercase;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  transform: translate(0, -20px);
+}
+.cta:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+  transform: translate(0, 0px);
+}
+.cta:hover:before, .cta:focus:before {
+  opacity: 0;
+  transform: translate(0, 20px);
+}
+.cta:hover span, .cta:focus span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.cta:hover span:nth-child(1), .cta:focus span:nth-child(1) {
+  transition-delay: 0.025s;
+}
+.cta:hover span:nth-child(2), .cta:focus span:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.cta:hover span:nth-child(3), .cta:focus span:nth-child(3) {
+  transition-delay: 0.075s;
+}
+.cta:hover span:nth-child(4), .cta:focus span:nth-child(4) {
+  transition-delay: 0.1s;
+}
+.cta:hover span:nth-child(5), .cta:focus span:nth-child(5) {
+  transition-delay: 0.125s;
+}
+.cta:hover span:nth-child(6), .cta:focus span:nth-child(6) {
+  transition-delay: 0.15s;
 }
 
 .header-form {
@@ -934,4 +989,38 @@ header {
   .astro-laptop {
     display: none;
   }
+}
+
+/* Cursor effects */
+.cursor .cursor--small,
+.cursor .cursor--large,
+.cursor .cursor--text {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  user-select: none;
+}
+.cursor .cursor--text {
+  --cursor-size: fit-content;
+  font-size: 0.75rem;
+  color: #fff;
+  opacity: 0;
+}
+.cursor .cursor--text .text {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.cursor .cursor--small {
+  --cursor-size: 20px;
+  background: #fff;
+}
+.cursor .cursor--large {
+  --cursor-size: 60px;
+  border: 2px solid #fff;
 }
