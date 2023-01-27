@@ -6,7 +6,7 @@
 
 header,
 section:nth-child(even) {
-  background: url("assets/grid.svg") no-repeat center center;
+  background: url("images/grid.svg") no-repeat center center;
   /* background-size: contain; */
 }
 
@@ -638,6 +638,105 @@ header {
 }
 
 /*  */
+
+/* Testimonials */
+
+#testimonials {
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel {
+  position: relative;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+#carousel-wrapper {
+  position: relative;
+  max-width: 70%;
+}
+
+.client-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-img-wrapper {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.client-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0 0;
+}
+
+.client-subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+
+.client-text {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.logoRotate-wrapper {
+  height: 26rem;
+  width: 30vw;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.logoRotate {
+  position: absolute;
+  top: 15%;
+  right: -35%;
+  width: 70%;
+  height: 70%;
+  animation: logoRotate 5s cubic-bezier(0.9, 0.2, 0.1, 0.8) infinite;
+}
+
+@keyframes logoRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    filter: blur(0);
+  }
+  50% {
+    filter: blur(1px);
+  }
+  70% {
+    filter: blur(0);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+
+
+/*  */
+
 /* Contact */
 .contact-body {
   display: flex;
@@ -724,6 +823,10 @@ header {
   margin-top: 5rem;
   display: flex;
   justify-content: space-between;
+}
+
+.phone a {
+  color: var(--primary-color);
 }
 
 .social {

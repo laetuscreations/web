@@ -140,3 +140,55 @@ function updateCarousel() {
   });
   carouselItems[currentIndex].style.display = "flex";
 }
+
+/// [Testimonials]
+
+fetch('data/TestimonialsData.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach((client) => {
+      const carouselItem = document.createElement('div');
+      carouselItem.classList.add('client-item');
+      carouselItem.innerHTML = `
+        <div class="client-img-wrapper">
+          <img class="client-img" src="${client.image}" alt="${client.name}">
+        </div>
+        <h3 class="client-title">${client.name}</h3>
+        <h4 class="client-subtitle">${client.subtitle}</h4>
+        <p class="client-text">${client.text}</p>
+      `;
+      document.querySelector('#carousel-inner').appendChild(carouselItem);
+    });
+
+    // Select the dynamic carousel items
+    testimonialItems = document.querySelectorAll(".client-item");
+    currentTestimonial = 0;
+    updateTestimonialCarousel();
+  });
+
+  document
+  .querySelector(".prev-button")
+  .addEventListener("click", function () {
+    currentTestimonial--;
+    if (currentTestimonial < 0) {
+      currentTestimonial = testimonialItems.length - 1;
+    }
+    updateTestimonialCarousel();
+  });
+
+document
+  .querySelector(".next-button")
+  .addEventListener("click", function () {
+    currentTestimonial++;
+    if (currentTestimonial >= testimonialItems.length) {
+      currentTestimonial = 0;
+    }
+    updateTestimonialCarousel();
+  });
+
+function updateTestimonialCarousel() {
+  testimonialItems.forEach(function (item) {
+    item.style.display = "none";
+  });
+  testimonialItems[currentTestimonial].style.display = "flex";
+}

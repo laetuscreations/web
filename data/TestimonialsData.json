@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Bruce Wayne",
+      "subtitle": "Wayne Enterprises",
+      "image": "https://upload.wikimedia.org/wikipedia/en/1/19/Bruce_Wayne_%28The_Dark_Knight_Trilogy%29.jpg",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"
+    },
+    {
+      "name": "Tony Stark",
+      "subtitle": "Stark Industries",
+      "image": "https://wellgroomedgentleman.com/media/images/Tony_Stark_Beard_with_Quiff_Hairstyle.width-800.jpg",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"
+    },
+    {
+      "name": "Steve Rogers",
+      "subtitle": "US Army",
+      "image": "https://www.hollywoodreporter.com/wp-content/uploads/2022/08/MCDCAAM_EC067.jpg?w=2000&h=1126&crop=1",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore"
+    }
+  ]
+  
