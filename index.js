@@ -35,7 +35,7 @@ fetch("data/ClientsList.json")
       .querySelector(".clients");
     data.forEach((client) => {
       const newClient = document.createElement("a");
-      newClient.className = "client";
+      newClient.className = "client hover-zoom";
       newClient.href = client.url;
       const img = document.createElement("img");
       img.src = `images/clients/${client.logo}`;
