@@ -203,7 +203,7 @@ function sendMail() {
     To: "laetuscreation@gmail.com",
     From: "laetuscreation@gmail.com",
     Subject: `${name} sent you a message from your website`,
-    Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+    Body: `Name: ${name} <br/> Email: ${email} <br/><br/> Message: ${message}`,
   }).then((message) => {
     if (message == "OK") {
       alert("Your message has been sent. Thank you for contacting us.");
