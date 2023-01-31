@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta property="og:url" content="https://laetuscreations.github.io/web/" >
-    <meta property="og:type" content="website" >
-    <meta property="og:title" content="Laetus Creations" >
-    <meta property="og:description" content="A Design Agency for the Digital Era" >
-    <meta property="og:image" content="https://raw.githubusercontent.com/laetuscreations/web/43d5507f3737abaeeb1491d7d97af264d652d470/images/leatus-logo.svg" >
-    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/laetuscreations/web/43d5507f3737abaeeb1491d7d97af264d652d470/images/leatus-logo.svg" >
-    <meta property="og:image:alt" content="Laetus Creations" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://laetuscreations.github.io/web/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Laetus Creations" />
+    <meta
+      property="og:description"
+      content="A Design Agency for the Digital Era"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/laetuscreations/web/43d5507f3737abaeeb1491d7d97af264d652d470/images/leatus-logo.svg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://raw.githubusercontent.com/laetuscreations/web/43d5507f3737abaeeb1491d7d97af264d652d470/images/leatus-logo.svg"
+    />
+    <meta property="og:image:alt" content="Laetus Creations" />
     <!-- <meta property="og:image:type" content="image/svg" > -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css" />
     <title>Laetus Creations</title>
   </head>
   <body>
@@ -23,7 +33,7 @@
         <div class="brand">
           <a href="#"
             ><img src="images/leatus-logo.svg" alt="" class="logo"
-          ></a>
+          /></a>
         </div>
         <nav>
           <div class="nav-mobile">
@@ -53,7 +63,7 @@
           <a class="cta" href="#contact"> Connect with Us </a>
         </div>
         <div class="header-img">
-          <img src="images/astro.svg" alt="" >
+          <img src="images/astro.svg" alt="" />
         </div>
       </div>
     </header>
@@ -83,41 +93,41 @@
             class="carousel-button carousel-button-prev"
             src="images/ui-icons/arrow-left.svg"
             alt="Previous"
-          >
+          />
           <img
             class="carousel-button carousel-button-next"
             src="images/ui-icons/arrow-right.svg"
             alt=""
-          >
+          />
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
-    
+
     <section id="testimonials">
       <div class="container">
         <h2>Our Valuable Clients</h2>
         <div id="carousel-wrapper">
           <div id="carousel">
             <img
-            class="prev-button carousel-button "
-            src="images/ui-icons/arrow-left.svg"
-            alt="Previous"
-          >
-          <img
-            class="next-button carousel-button "
-            src="images/ui-icons/arrow-right.svg"
-            alt=""
-          >
+              class="prev-button carousel-button"
+              src="images/ui-icons/arrow-left.svg"
+              alt="Previous"
+            />
+            <img
+              class="next-button carousel-button"
+              src="images/ui-icons/arrow-right.svg"
+              alt=""
+            />
             <div id="carousel-inner">
               <!-- Carousel items will be dynamically added here -->
             </div>
           </div>
-        </div>   
-      </div>     
+        </div>
+      </div>
       <div class="logoRotate-wrapper">
-        <img class="logoRotate" src="images/logoRotate.svg" alt="" >
+        <img class="logoRotate" src="images/logoRotate.svg" alt="" />
       </div>
     </section>
 
@@ -126,24 +136,24 @@
       <div class="container">
         <h2>Contact Us</h2>
         <div class="contact-body">
-          <img src="images/Contact.svg" alt="" >
+          <img src="images/Contact.svg" alt="" />
           <div class="contact-form">
-            <form>
+            <form id="contact-form" method="post">
               <fieldset>
                 <label for="name">Hi, I'm</label>
-                <input type="text" name="name" placeholder="Your name" >
+                <input type="text" id="name" placeholder="Your name" required/>
               </fieldset>
               <fieldset>
                 <label for="email">Reach me at</label>
                 <input
                   type="email"
-                  name="email"
+                  id="email" required
                   placeholder="abc@example.com"
-                >
+                />
               </fieldset>
               <fieldset class="msg">
                 <label for="msg">Here is what I have to say</label>
-                <textarea name="msg" placeholder="Your message"></textarea>
+                <textarea id="msg" placeholder="Your message" required></textarea>
               </fieldset>
               <button type="submit">Send</button>
             </form>
@@ -153,21 +163,21 @@
           <div class="phone">
             <h3>Phone</h3>
             <a href="tel:+917025467544">+91 7025 467 544</a>
-            <br >
+            <br />
             <a href="tel:+918542216452">+91 8542 216 452</a>
           </div>
           <div class="social">
             <a href="https://wa.me/+917025467544" target="_blank">
-              <img src="images/ui-icons/whatsapp-icon.svg" alt="" >
+              <img src="images/ui-icons/whatsapp-icon.svg" alt="" />
             </a>
             <a
               href="https://www.instagram.com/laetus_creations/"
               target="_blank"
             >
-              <img src="images/ui-icons/instagram-icon.svg" alt="" >
+              <img src="images/ui-icons/instagram-icon.svg" alt="" />
             </a>
             <a href="mailto:laetuscreation@gmail.com" target="_blank">
-              <img src="images/ui-icons/mail-icon.svg" alt="" >
+              <img src="images/ui-icons/mail-icon.svg" alt="" />
             </a>
           </div>
         </div>
@@ -175,6 +185,7 @@
     </section>
 
     <!-- JS -->
+    <script src="credentials.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
