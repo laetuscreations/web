@@ -199,12 +199,18 @@ function sendMail() {
   let message = document.getElementById("msg").value;
 
   Email.send({
-    SecureToken: smtp_token,
-    To: "mewin48879@ezgiant.com",
-    From: "mewin48879@ezgiant.com",
+    SecureToken: "f0a1f360-d9ac-4785-a721-5b29bec4428d",
+    To: "laetuscreation@gmail.com",
+    From: "laetuscreation@gmail.com",
     Subject: `${name} sent you a message from your website`,
     Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
-  }).then((message) => alert(message));
+  }).then((message) => {
+    if (message == "OK") {
+      alert("Your message has been sent. Thank you for contacting us.");
+    } else {
+      alert("There was an error sending your message. Please try again.");
+    }
+  });
 }
 
 // send mail on submit
