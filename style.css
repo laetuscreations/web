@@ -161,7 +161,7 @@ nav ul li a::before {
   transition: all ease-out 0.4s;
 }
 
-nav ul li:last-child a::before {
+nav .nav-contact-btn a::before {
   content: none;
 }
 
@@ -170,12 +170,16 @@ nav ul li a:hover::before {
   left: 0;
 }
 
-nav ul li:last-child a {
+.nav-contact-btn a {
   background: var(--primary-color);
   padding: 0.8rem 2rem;
   margin: 1.2rem 0.5rem;
   color: #fff;
   border-radius: 10rem;
+}
+
+nav ul li a img {
+  margin: 0 auto;
 }
 
 nav ul li a:not(:only-child):after {
@@ -221,7 +225,7 @@ nav ul li ul li a {
     padding: 1rem 2rem 1rem;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 10px #00000038;
+    box-shadow: 0 0 20px #00000018;
     border-radius: 4rem;
   }
 
@@ -323,9 +327,6 @@ nav ul li ul li a {
 .brand {
   position: absolute;
   float: left;
-  line-height: 70px;
-  text-transform: uppercase;
-  font-size: 1.4em;
 }
 
 .brand a,
@@ -335,9 +336,9 @@ nav ul li ul li a {
 }
 
 .logo {
-  width: 4rem;
+  width: 5rem;
   z-index: 1;
-  margin: 1rem 0 0 0;
+  margin: .5rem 0 0 0;
 }
 
 /* Hero */

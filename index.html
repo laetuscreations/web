@@ -20,10 +20,14 @@
       content="https://raw.githubusercontent.com/laetuscreations/web/main/images/laetus%20logo.png"
     />
     <meta property="og:image:alt" content="Laetus Creations" />
-    <meta property="og:image:type" content="image/png" >
+    <meta property="og:image:type" content="image/png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/leatus-logo.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="images/leatus-logo.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Laetus Creations</title>
   </head>
@@ -41,11 +45,15 @@
             <a id="nav-toggle" href="#!"><span></span></a>
           </div>
           <ul class="nav-list">
-            <li><a href="#clients">Clients</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a class="hover-zoom" href="#contact">Contact Us</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li class="nav-contact-btn"><a class="hover-zoom" href="#contact">Contact Us</a></li>
+            <li>
+              <a href="https://wa.me/+917025467544" target="_blank">
+                <img src="images/ui-icons/whatsapp-icon.svg" alt="" />
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -142,19 +150,24 @@
             <form id="contact-form" method="post">
               <fieldset>
                 <label for="name">Hi, I'm</label>
-                <input type="text" id="name" placeholder="Your name" required/>
+                <input type="text" id="name" placeholder="Your name" required />
               </fieldset>
               <fieldset>
                 <label for="email">Reach me at</label>
                 <input
                   type="email"
-                  id="email" required
+                  id="email"
+                  required
                   placeholder="abc@example.com"
                 />
               </fieldset>
               <fieldset class="msg">
                 <label for="msg">Here is what I have to say</label>
-                <textarea id="msg" placeholder="Your message" required></textarea>
+                <textarea
+                  id="msg"
+                  placeholder="Your message"
+                  required
+                ></textarea>
               </fieldset>
               <button type="submit">Send</button>
             </form>
