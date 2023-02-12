@@ -60,12 +60,9 @@ fetch("data/ServicesData.json")
       title.textContent = service.title;
       const desc = document.createElement("p");
       desc.textContent = service.desc;
-      const detailContainer = document.createElement("div");
-      detailContainer.className = "services-details";
-      detailContainer.appendChild(title);
-      detailContainer.appendChild(desc);
       newService.appendChild(img);
-      newService.appendChild(detailContainer);
+      newService.appendChild(title);
+      newService.appendChild(desc);
       servicesContainer.appendChild(newService);
     });
   });

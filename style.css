@@ -7,10 +7,6 @@
   --background-dark-color-2: #e5e5e5;
 }
 
-header,
-section:nth-child(even) {
-  background: url("images/grid.svg") no-repeat center center/cover;
-}
 
 body.scroll_lock {
   overflow: hidden;
@@ -595,11 +591,12 @@ header {
 
 .services-item {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   border: 1px solid var(--border-color);
   padding: 2rem;
   border-radius: 1.2rem;
-  background-color: var(--background-dark-color-1);
+  background-color: var(--primary-color);
 
   position: relative;
   display: flex;
@@ -639,7 +636,7 @@ header {
 .services-item::after {
   content: "";
   position: absolute;
-  background: white;
+  background-color: var(--primary-color);
   inset: 5px;
   border-radius: 1rem;
 }
@@ -658,11 +655,15 @@ header {
 .services-item h3 {
   font-size: 2.4rem;
   font-weight: 500;
+  color: white;
+  text-align: center;
 }
 
 .services-item p {
   font-size: 1.6rem;
   line-height: 1.8;
+  color: #e4e4e4;
+  text-align: center;
 }
 
 @media only screen and (max-width: 640px) {
