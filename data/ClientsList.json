@@ -1,28 +1,47 @@
 [
     {
-      "name": "Stark Industries",
-      "url": "https://www.starkindustries.com",
-      "logo": "stark.svg"
+      "name": "vetements",
+      "logo": "vetements.svg"
     },
     {
-      "name": "Google",
-      "url": "http://www.google.com",
-      "logo": "google.svg"
+      "name": "samava",
+       "logo": "samava.svg"
     },
     {
-      "name": "Wayne Enterprises",
-      "url": "https://www.wayneenterprises.com",
-      "logo": "wayne.svg"
+      "name": "karma",
+      "logo": "karma.svg"
     },
     {
-      "name": "Meta",
-      "url": "https://about.meta.com",
-      "logo": "meta.svg"
+      "name": "getmystuff",
+      "logo": "getmystuff.svg"
     },
     {
-      "name": "Tesla",
-      "url": "https://www.tesla.com",
-      "logo": "tesla.svg"
+      "name": "Kexim",
+      "logo": "Kexim logi.svg"
+    },
+    {
+      "name": "flame",
+      "logo": "flame.svg"
+    },
+    {
+      "name": "Satcon",
+      "logo": "Satcon.svg"
+    },
+    {
+      "name": "kmct",
+      "logo": "kmct.svg"
     }
+     {
+      "name": "Kexim h",
+      "logo": "keximhyper.svg"
+    },
+     {
+      "name": "pewa",
+      "logo": "pewa.svg"
+    },
+     {
+      "name": "hk",
+      "logo": "hkmobile.svg"
+    },
   ]
   
