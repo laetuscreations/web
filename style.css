@@ -123,9 +123,6 @@ select {
 }
 
 /* Navigation */
-nav {
-  float: right;
-}
 
 nav ul {
   list-style: none;
@@ -171,14 +168,6 @@ nav .nav-contact-btn a::before {
 nav ul li a:hover::before {
   width: 100%;
   left: 0;
-}
-
-.nav-contact-btn a {
-  background: var(--primary-color);
-  padding: 0.8rem 2rem;
-  margin: 1.2rem 0.5rem;
-  color: #fff;
-  border-radius: 10rem;
 }
 
 nav ul li a img {
@@ -318,17 +307,30 @@ nav ul li ul li a {
   z-index: 2;
 }
 
+.connect-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  gap: 1rem;
+  padding: 0.7rem 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 4rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
 /*
 .nav-container – the inner wrapper for the navbar. Defines how far the actual content should stretch.
 */
 .nav-container {
   width: 95%;
   margin: 0 auto;
-}
-
-.brand {
-  position: absolute;
-  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand a,
@@ -560,7 +562,7 @@ header {
   align-items: center;
   row-gap: 4rem;
   column-gap: 6rem;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .client img {
@@ -587,6 +589,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 .services-item {

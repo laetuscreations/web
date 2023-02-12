@@ -1,47 +1,46 @@
 [
-    {
-      "name": "vetements",
-      "logo": "vetements.svg"
-    },
-    {
-      "name": "samava",
-       "logo": "samava.svg"
-    },
-    {
-      "name": "karma",
-      "logo": "karma.svg"
-    },
-    {
-      "name": "getmystuff",
-      "logo": "getmystuff.svg"
-    },
-    {
-      "name": "Kexim",
-      "logo": "Kexim logi.svg"
-    },
-    {
-      "name": "flame",
-      "logo": "flame.svg"
-    },
-    {
-      "name": "Satcon",
-      "logo": "Satcon.svg"
-    },
-    {
-      "name": "kmct",
-      "logo": "kmct.svg"
-    },
-     {
-      "name": "Kexim h",
-      "logo": "keximhyper.svg"
-    },
-     {
-      "name": "pewa",
-      "logo": "pewa.svg"
-    },
-     {
-      "name": "hk",
-      "logo": "hkmobile.svg"
-    },
-  ]
-  
+  {
+    "name": "vetements",
+    "logo": "vetements.svg"
+  },
+  {
+    "name": "samava",
+    "logo": "samava.svg"
+  },
+  {
+    "name": "karma",
+    "logo": "karma.svg"
+  },
+  {
+    "name": "getmystuff",
+    "logo": "getmystuff.svg"
+  },
+  {
+    "name": "Kexim",
+    "logo": "Kexim logi.svg"
+  },
+  {
+    "name": "flame",
+    "logo": "flame.svg"
+  },
+  {
+    "name": "Satcon",
+    "logo": "Satcon.svg"
+  },
+  {
+    "name": "kmct",
+    "logo": "kmct.svg"
+  },
+  {
+    "name": "Kexim h",
+    "logo": "keximhyper.svg"
+  },
+  {
+    "name": "pewa",
+    "logo": "pewa.svg"
+  },
+  {
+    "name": "hk",
+    "logo": "hkmobile.svg"
+  }
+]
