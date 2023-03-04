@@ -400,11 +400,11 @@ header {
   transition: all 0.2s ease-out;
 }
 
-.cta:hover {
+/* .cta:hover {
   background-position: 100% 0;
   transform: translateY(-2px);
   box-shadow: 0 10px 10px hsla(261, 94%, 61%, 0.3);
-}
+} */
 
 .cta span {
   display: inline-block;
