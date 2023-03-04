@@ -605,11 +605,16 @@ header {
   overflow: hidden;
 }
 
+.services-item:hover {
+  transform: scale(0.95);
+  transition: all 0.3s;
+ }
+
 .services-item > * {
   z-index: 1;
 }
 
-.services-item::before {
+/*.services-item::before {
   content: "";
   position: absolute;
   width: 130%;
@@ -621,7 +626,7 @@ header {
   height: 50%;
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
-}
+} */
 
 @keyframes rotBGimg {
   from {
