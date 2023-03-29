@@ -90,13 +90,13 @@ fetch("data/ProjectsData.json")
       detailContainer.appendChild(title);
       detailContainer.appendChild(desc);
       newProject.appendChild(img);
-      newProject.appendChild(detailContainer);
+      // newProject.appendChild(detailContainer);
       const link = document.createElement("a");
       link.className = "project-link";
       link.target = "_blank";
       link.href = project.link;
       link.textContent = "View Project";
-      newProject.appendChild(link);
+      // newProject.appendChild(link);
       carouselContainer.appendChild(newProject);
     });
 
@@ -104,6 +104,10 @@ fetch("data/ProjectsData.json")
     carouselItems = document.querySelectorAll(".carousel-item");
     currentIndex = 0;
     updateCarousel();
+
+    // Set the interval to switch the carousel items
+    const intervalTime = 3000; // 3 seconds
+    setInterval(nextCarouselItem, intervalTime);
   })
   .catch((error) => {
     console.error("Error fetching JSON data:", error);
@@ -129,6 +133,14 @@ document
     updateCarousel();
   });
 
+function nextCarouselItem() {
+  currentIndex++;
+  if (currentIndex >= carouselItems.length) {
+    currentIndex = 0;
+  }
+  updateCarousel();
+}
+
 function updateCarousel() {
   carouselItems.forEach(function (item) {
     item.style.display = "none";
@@ -137,6 +149,7 @@ function updateCarousel() {
   carouselItems[currentIndex].style.display = "flex";
   $(carouselItems[currentIndex]).animate({ opacity: "1" });
 }
+
 
 /// [Testimonials]
 
