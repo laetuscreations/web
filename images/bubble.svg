@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 2500 2500" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="p" x1="-4451.5" x2="-4175.6" y1="-1726.3" y2="-1379.6" gradientTransform="matrix(.94737 0 0 .94737 2747.9 314.9)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#00f" offset="0"/>
+   <stop stop-color="#0095ff" offset="1"/>
+  </linearGradient>
+  <filter id="k" x="-.012" y="-.012" width="1.024" height="1.024" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="5.9041565"/>
+  </filter>
+  <radialGradient id="q" cx="-4666.5" cy="-1698.6" r="604.59" gradientTransform="matrix(.65361 1.1628 -1.2815 1.152 -3759.9 5418.1)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#00f" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <filter id="l" x="-.12083" y="-.12083" width="1.2417" height="1.2417" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="59.448711"/>
+  </filter>
+  <filter id="a" x="-.24925" y="-.30919" width="1.4985" height="1.6184" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="15.771818"/>
+  </filter>
+  <filter id="m" x="-.12" y="-.12" width="1.24" height="1.24" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="61.327631"/>
+  </filter>
+  <filter id="n" x="-.060186" y="-.059815" width="1.1204" height="1.1196" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="23.908252"/>
+  </filter>
+  <filter id="o" x="-.51083" y="-.51824" width="2.0217" height="2.0365" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="29.396915"/>
+  </filter>
+  <clipPath id="j">
+   <ellipse cx="-1236.5" cy="-1829.3" rx="775.99" ry="759.71" color="#000000" color-rendering="auto" fill="#2129ff" fill-rule="evenodd" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(2012.5 3569.6)">
+  <g transform="matrix(1.2887 0 0 1.2887 830.94 37.766)" clip-path="url(#j)" fill-rule="evenodd" shape-rendering="auto">
+   <ellipse cx="-1236.5" cy="-1829.3" rx="799.05" ry="782.28" color="#000000" color-rendering="auto" fill="#2129ff" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <circle transform="matrix(1.3433 0 0 1.3151 713.31 -80.941)" cx="-1451.6" cy="-1329.5" r="590.42" color="#000000" color-rendering="auto" fill="url(#p)" filter="url(#k)" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <circle transform="matrix(1.1551 0 0 .89425 3834.8 -473.19)" cx="-4432.8" cy="-1735.7" r="590.42" color="#000000" color-rendering="auto" fill="url(#q)" filter="url(#l)" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <ellipse transform="matrix(.80333 1.054 -1.0766 .78647 4717.9 396.66)" cx="-4431.6" cy="2529.3" rx="34.791" ry="91.118" color="#000000" color-rendering="auto" fill="#fff" filter="url(#a)" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <circle transform="matrix(1.3723 0 0 1.3435 4846.6 502.64)" cx="-4432.8" cy="-1735.7" r="613.28" color="#000000" color-rendering="auto" fill="#fff" filter="url(#m)" image-rendering="auto" opacity=".627" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <ellipse transform="matrix(.46345 .64929 -.62108 .4845 2090.3 -582.67)" cx="-4431.6" cy="2529.3" rx="34.791" ry="91.118" color="#000000" color-rendering="auto" fill="#fff" filter="url(#a)" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <ellipse transform="matrix(1.3946 1.9529 -1.869 1.4573 10094 3577.4)" cx="-4431.6" cy="2529.3" rx="34.791" ry="91.118" color="#000000" color-rendering="auto" fill="#e1ffff" filter="url(#a)" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <path transform="matrix(1.4055 0 0 1.376 798.55 -3.989)" d="m-1106.6-1742.6a528.54 528.54 0 0 1 142.24 360.1 528.54 528.54 0 0 1 -528.54 528.54 528.54 528.54 0 0 1 -352.53 -135.5 532.79 532.79 0 0 0 420.59 206.14 532.79 532.79 0 0 0 532.79 -532.79 532.79 532.79 0 0 0 -214.54 -426.49z" color="#000000" color-rendering="auto" fill="#fff" filter="url(#n)" image-rendering="auto" opacity=".399" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+   <ellipse transform="matrix(.95132 1.46 -1.2749 1.0895 5832.9 1446.5)" cx="-4431.6" cy="2529.3" rx="34.791" ry="91.118" color="#000000" color-rendering="auto" fill="#fff" filter="url(#o)" image-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+  </g>
+ </g>
+</svg>

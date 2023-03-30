@@ -8,7 +8,26 @@
   --black: #0c0c0c;
 }
 
+body{
+  /* cursor: none; */
+  cursor: url('images/bubble.svg'), auto;
+}
 
+/* .rounded{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.pointed{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+} */
 
 body.scroll_lock {
   overflow: hidden;
@@ -255,14 +274,16 @@ nav ul li ul li a {
   position: absolute;
   left: 18px;
   top: 22px;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('images/bubble.svg'), auto;
   padding: 10px 35px 16px 0px;
 }
 
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('images/bubble.svg'), auto;
   border-radius: 1px;
   height: 5px;
   width: 35px;
@@ -506,7 +527,8 @@ transform: scale(1.5) translateY(5rem);
   border: none;
   border-radius: 0 4rem 4rem 0;
   background-color: var(--primary-color);
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('images/bubble.svg'), auto;
 }
 
 @media (min-width: 600px) {
@@ -783,7 +805,8 @@ section#projects .container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('images/bubble.svg'), auto;
   width: 4rem;
   z-index: 1;
 }
@@ -798,6 +821,7 @@ section#projects .container {
 
 .carousel-item img {
   margin: 0 auto 2rem;
+  border-radius: 1.2rem;
   transition: all 0.3s ease-out;
 }
 
@@ -1122,7 +1146,8 @@ section#projects .container {
   border: 2px solid var(--primary-color);
   border-radius: 1rem;
   background-color: #f5f5f5;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('images/bubble.svg'), auto;
 }
 
 .contact-form form button:hover,
@@ -1210,7 +1235,7 @@ section#projects .container {
 }
 
 .user-text{
-  font-size: small; !important
+  font-size: small !important;
 }
 
 .login-box .user-box label {
@@ -1303,7 +1328,7 @@ section#projects .container {
   background-color: #0c0c0c;
   text-align: center;
   color: #5d19ba;
-  padding-bottom: ;
+  /* padding-bottom: ; */
 }
 
 
@@ -1340,7 +1365,8 @@ section#projects .container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: url('images/bubble.svg'), auto;
   width: 4rem;
   z-index: 1;
 }
