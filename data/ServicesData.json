@@ -1,27 +1,27 @@
 [
     {
       "id": "0",
-      "img": "branding icon.svg",
+      "img": "brush.svg",
       "title": "Branding",
-      "desc": "We produce the most innovative and top-quality designs to draw in the top clients. Our up-to-date designs match with the likes of your customers in the best way and give your company a trendy touch."
+      "desc": "We create unique and impactful branding solutions that reflect your company's values, identity, and message. Our designs are tailored to attract and engage your target audience"
     },
     {
       "id": "1",
-      "img": "social media.svg",
+      "img": "monitor.svg",
       "title": "Social Media",
-      "desc": "For the best user experience, we build high-quality user interfaces for mobile apps and web products. Every design we create is enhanced by a professional touch."
+      "desc": "We help you connect with your audience, build brand awareness, and drive engagement through our social media management services. From content creation to community management, we've got you covered"
     },
     {
       "id": "2",
-      "img": "product design.svg",
+      "img": "cam.svg",
       "title": "Product Designing",
-      "desc": "Our marketing strategies will guide your business to acquire the most valuable spot in the global market. The carefully planned strategies always give you the best branding for your company."
+      "desc": "We specialize in designing packaging that not only looks great but also tells your brand's story and enhances the customer experience. Our designs are practical, functional, and visually stunning"
     },
     {
       "id": "3",
-      "img": "advertising.svg",
+      "img": "box.svg",
       "title": "Advertising",
-      "desc": "Whether you are rebuilding the product or starting from the scratch, we provide the best designs and strategies for your product. The cost-efficient, reliable and trustworthy agency works for you."
+      "desc": "Our advertising strategies combine creativity and data-driven insights to deliver campaigns that resonate with your audience and drive conversions. We offer print, digital, and social media advertising"
     }
   ]
   
