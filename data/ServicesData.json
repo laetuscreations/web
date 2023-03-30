@@ -1,25 +1,25 @@
 [
     {
       "id": "0",
-      "img": "brush.svg",
+      "img": "branding icon.svg",
       "title": "Branding",
       "desc": "We produce the most innovative and top-quality designs to draw in the top clients. Our up-to-date designs match with the likes of your customers in the best way and give your company a trendy touch."
     },
     {
       "id": "1",
-      "img": "monitor.svg",
+      "img": "social media.svg",
       "title": "Social Media",
       "desc": "For the best user experience, we build high-quality user interfaces for mobile apps and web products. Every design we create is enhanced by a professional touch."
     },
     {
       "id": "2",
-      "img": "cam.svg",
+      "img": "product design.svg",
       "title": "Product Designing",
       "desc": "Our marketing strategies will guide your business to acquire the most valuable spot in the global market. The carefully planned strategies always give you the best branding for your company."
     },
     {
       "id": "3",
-      "img": "box.svg",
+      "img": "advertising.svg",
       "title": "Advertising",
       "desc": "Whether you are rebuilding the product or starting from the scratch, we provide the best designs and strategies for your product. The cost-efficient, reliable and trustworthy agency works for you."
     }
