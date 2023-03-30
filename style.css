@@ -10,7 +10,7 @@
 
 body{
   /* cursor: none; */
-  cursor: url('images/bubble.svg'), auto;
+  cursor: url('images/bubble.svg') 15 15, auto;
 }
 
 .hidden {

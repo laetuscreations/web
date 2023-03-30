@@ -44,22 +44,22 @@
   }))(jQuery); // end jQuery
 
 /// [clients]
-fetch("data/ClientsList.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const clientsContainer = document
-      .getElementById("clients")
-      .querySelector(".clients");
-    data.forEach((client) => {
-      const newClient = document.createElement("div");
-      newClient.className = "client";
-      const img = document.createElement("img");
-      img.src = `images/clients/${client.logo}`;
-      img.alt = client.name;
-      newClient.appendChild(img);
-      clientsContainer.appendChild(newClient);
-    });
-  });
+// fetch("data/ClientsList.json")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     const clientsContainer = document
+//       .getElementById("clients")
+//       .querySelector(".clients");
+//     data.forEach((client) => {
+//       const newClient = document.createElement("div");
+//       newClient.className = "client";
+//       const img = document.createElement("img");
+//       img.src = `images/clients/${client.logo}`;
+//       img.alt = client.name;
+//       newClient.appendChild(img);
+//       clientsContainer.appendChild(newClient);
+//     });
+//   });
 
 /// [services]
 fetch("data/ServicesData.json")
@@ -131,25 +131,25 @@ fetch("data/ProjectsData.json")
     console.error("Error fetching JSON data:", error);
   });
 
-document
-  .querySelector(".carousel-button-prev")
-  .addEventListener("click", function () {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = carouselItems.length - 1;
-    }
-    updateCarousel();
-  });
+// document
+//   .querySelector(".carousel-button-prev")
+//   .addEventListener("click", function () {
+//     currentIndex--;
+//     if (currentIndex < 0) {
+//       currentIndex = carouselItems.length - 1;
+//     }
+//     updateCarousel();
+//   });
 
-document
-  .querySelector(".carousel-button-next")
-  .addEventListener("click", function () {
-    currentIndex++;
-    if (currentIndex >= carouselItems.length) {
-      currentIndex = 0;
-    }
-    updateCarousel();
-  });
+// document
+//   .querySelector(".carousel-button-next")
+//   .addEventListener("click", function () {
+//     currentIndex++;
+//     if (currentIndex >= carouselItems.length) {
+//       currentIndex = 0;
+//     }
+//     updateCarousel();
+//   });
 
 function nextCarouselItem() {
   currentIndex++;
@@ -171,44 +171,44 @@ function updateCarousel() {
 
 /// [Testimonials]
 
-fetch("data/TestimonialsData.json")
-  .then((response) => response.json())
-  .then((data) => {
-    data.forEach((client) => {
-      const carouselItem = document.createElement("div");
-      carouselItem.classList.add("client-item");
-      carouselItem.innerHTML = `
-        <div class="client-img-wrapper">
-          <img class="client-img" src="${client.image}" alt="${client.name}">
-        </div>
-        <h3 class="client-title">${client.name}</h3>
-        <h4 class="client-subtitle">${client.subtitle}</h4>
-        <p class="client-text">${client.text}</p>
-      `;
-      document.querySelector("#carousel-inner").appendChild(carouselItem);
-    });
+// fetch("data/TestimonialsData.json")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     data.forEach((client) => {
+//       const carouselItem = document.createElement("div");
+//       carouselItem.classList.add("client-item");
+//       carouselItem.innerHTML = `
+//         <div class="client-img-wrapper">
+//           <img class="client-img" src="${client.image}" alt="${client.name}">
+//         </div>
+//         <h3 class="client-title">${client.name}</h3>
+//         <h4 class="client-subtitle">${client.subtitle}</h4>
+//         <p class="client-text">${client.text}</p>
+//       `;
+//       document.querySelector("#carousel-inner").appendChild(carouselItem);
+//     });
 
-    // Select the dynamic carousel items
-    testimonialItems = document.querySelectorAll(".client-item");
-    currentTestimonial = 0;
-    updateTestimonialCarousel();
-  });
+//     // Select the dynamic carousel items
+//     testimonialItems = document.querySelectorAll(".client-item");
+//     currentTestimonial = 0;
+//     updateTestimonialCarousel();
+//   });
 
-document.querySelector(".prev-button").addEventListener("click", function () {
-  currentTestimonial--;
-  if (currentTestimonial < 0) {
-    currentTestimonial = testimonialItems.length - 1;
-  }
-  updateTestimonialCarousel();
-});
+// document.querySelector(".prev-button").addEventListener("click", function () {
+//   currentTestimonial--;
+//   if (currentTestimonial < 0) {
+//     currentTestimonial = testimonialItems.length - 1;
+//   }
+//   updateTestimonialCarousel();
+// });
 
-document.querySelector(".next-button").addEventListener("click", function () {
-  currentTestimonial++;
-  if (currentTestimonial >= testimonialItems.length) {
-    currentTestimonial = 0;
-  }
-  updateTestimonialCarousel();
-});
+// document.querySelector(".next-button").addEventListener("click", function () {
+//   currentTestimonial++;
+//   if (currentTestimonial >= testimonialItems.length) {
+//     currentTestimonial = 0;
+//   }
+//   updateTestimonialCarousel();
+// });
 
 function updateTestimonialCarousel() {
   testimonialItems.forEach(function (item) {
@@ -224,6 +224,8 @@ function sendMail() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let message = document.getElementById("msg").value;
+
+  console.log("Name: " + name + " Email: " + email + " Message: " + message);
 
   Email.send({
     SecureToken: "f0a1f360-d9ac-4785-a721-5b29bec4428d",
