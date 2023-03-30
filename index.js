@@ -13,7 +13,7 @@
  
 // }
 
-// window.addEventListener('mousemove', moveCursor)
+// window.addEvent  Listener('mousemove', moveCursor)
 
 
 /// [nav]

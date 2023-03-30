@@ -70,6 +70,7 @@
       <header>
         <div class="container">
           <div class="header-items">
+            <h1 class="hidden">Design the difference</h1>
           <div class="header-content ">
             <img src="diff.svg" alt=""  style=" z-index: 2;">
           </div>
@@ -78,16 +79,26 @@
               <img src="images/art.gif"  alt="" />
             </div>
             <div class="hero-icon">
-              <li><a href="https://www.instagram.com/laetuscreations/" target="_blank">
+              <a href="https://www.instagram.com/laetuscreations/" target="_blank">
+              <li>
                 <img src="images/hero-icon/hero-insta.svg" alt="">
-                </a>
               </li>
-              <li><img src="images/hero-icon/hero-wts.svg" alt=""></li>
-              <li><img src="images/hero-icon/hero-linked.svg" alt=""></li>
-              <li><a href="mailto:laetuscreation@gmail.com">
-                <img src="images/hero-icon/hero-mail.svg" alt="">
+            </a>
+              <a href="https://wa.me/+917025467544">
+              <li>
+                  <img src="images/hero-icon/hero-wts.svg" alt="">
+                </li>
               </a>
+              <a href="https://www.linkedin.com/in/laetus-creations">
+              <li>
+                  <img src="images/hero-icon/hero-linked.svg" alt="">
+                </li>
+              </a>
+              <a href="mailto:laetuscreation@gmail.com">
+              <li>
+                <img src="images/hero-icon/hero-mail.svg" alt="">
               </li>
+            </a>
             </div>
           </div>
         </div>  
@@ -102,14 +113,14 @@
         <img src="images/clients/alfaza.svg">
         <img src="images/clients/flame.svg">
         <img src="images/clients/getmystuff.svg">
-        <img src="images/clients/joe i store.svg">
+        <!-- <img src="images/clients/joe i store.svg"> -->
         <img src="images/clients/samava.svg">
         <img src="images/clients/satcon.svg">
         <img src="images/clients/vetements.svg">
         <img src="images/clients/alfaza.svg">
         <img src="images/clients/flame.svg">
         <img src="images/clients/getmystuff.svg">
-        <img src="images/clients/joe i store.svg">
+        <!-- <img src="images/clients/joe i store.svg"> -->
         <img src="images/clients/samava.svg">
         <img src="images/clients/satcon.svg">
         <img src="images/clients/vetements.svg">
@@ -117,7 +128,7 @@
         <img src="images/clients/alfaza.svg">
         <img src="images/clients/flame.svg">
         <img src="images/clients/getmystuff.svg">
-        <img src="images/clients/joe i store.svg">
+        <!-- <img src="images/clients/joe i store.svg"> -->
         <img src="images/clients/samava.svg">
         <img src="images/clients/satcon.svg">
         <img src="images/clients/vetements.svg">
@@ -125,7 +136,7 @@
         <img src="images/clients/alfaza.svg">
         <img src="images/clients/flame.svg">
         <img src="images/clients/getmystuff.svg">
-        <img src="images/clients/joe i store.svg">
+        <!-- <img src="images/clients/joe i store.svg"> -->
         <img src="images/clients/samava.svg">
         <img src="images/clients/satcon.svg">
         <img src="images/clients/vetements.svg">
@@ -225,22 +236,22 @@
 
           <div class="contact-form">
             <div class="login-box">
-              <form>
+              <form id="contact-form" method="post">
                 <div class="user-box">
-                  <input type="text" name="" required="">
+                  <input id="name" type="text" name="" required="">
                   <label>Name</label>
                 </div>
                 <div class="user-box">
-                  <input type="password" name="" required="">
+                  <input id="mail" type="email" name="" required="">
                   <label>Email</label>
                 </div>
                 <div class="user-box">
                   <input type="text" name="" required="" >
-                  <label class="user-text">Your Message Here</label>
+                  <label id="msg" class="user-text">Your Message Here</label>
                 </div>
                 <center>
-                <a href="#">
-                       SEND
+                <a>
+                  <button type="submit">Send</button>
                    <span></span>
                 </a></center>
               </form>
