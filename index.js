@@ -2,19 +2,17 @@
 // const cursorRounded = document.querySelector('.rounded');
 // const cursorPointed = document.querySelector('.pointed');
 
-
 // const moveCursor = (e)=> {
 //   const mouseY = e.clientY;
 //   const mouseX = e.clientX;
-   
+
 //   cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-  
+
 //   cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
- 
+
 // }
 
 // window.addEvent  Listener('mousemove', moveCursor)
-
 
 /// [nav]
 (($) =>
@@ -124,8 +122,19 @@ fetch("data/ProjectsData.json")
     updateCarousel();
 
     // Set the interval to switch the carousel items
-    const intervalTime = 3000; // 3 seconds
-    setInterval(nextCarouselItem, intervalTime);
+    let intervalId;
+    let intervalTime = 3000; // 3 seconds
+    intervalId = setInterval(nextCarouselItem, intervalTime);
+
+    // Add event listeners to pause and resume the carousel on hover
+    carouselContainer.addEventListener("mouseenter", () => {
+      clearInterval(intervalId);
+    });
+
+    carouselContainer.addEventListener("mouseleave", () => {
+      intervalId = setInterval(nextCarouselItem, intervalTime);
+      console.log("intervalId", intervalId);
+    });
   })
   .catch((error) => {
     console.error("Error fetching JSON data:", error);
@@ -167,7 +176,6 @@ function updateCarousel() {
   carouselItems[currentIndex].style.display = "flex";
   $(carouselItems[currentIndex]).animate({ opacity: "1" });
 }
-
 
 /// [Testimonials]
 
