@@ -126,14 +126,15 @@ fetch("data/ProjectsData.json")
     let intervalTime = 3000; // 3 seconds
     intervalId = setInterval(nextCarouselItem, intervalTime);
 
-    // Add event listeners to pause and resume the carousel on hover
-    carouselContainer.addEventListener("mouseenter", () => {
-      clearInterval(intervalId);
-    });
+    // Attach mouseenter and mouseleave events to carouselItems
+    carouselItems.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        clearInterval(intervalId);
+      });
 
-    carouselContainer.addEventListener("mouseleave", () => {
-      intervalId = setInterval(nextCarouselItem, intervalTime);
-      console.log("intervalId", intervalId);
+      item.addEventListener("mouseleave", () => {
+        intervalId = setInterval(nextCarouselItem, 3000);
+      });
     });
   })
   .catch((error) => {
