@@ -828,12 +828,12 @@ section#projects .container {
 .carousel-item img {
   margin: 0 auto 2rem;
   border-radius: 1.2rem;
-  transition: all 0.3s ease-out;
+  transition: all 0.1s ease-out;
 }
 
-.carousel-item img:hover {
+/* .carousel-item img:hover {
   transform: scale(1.01);
-}
+} */
 
 .carousel-item h3 {
   font-size: 3rem;
@@ -1180,7 +1180,7 @@ section#projects .container {
 }
 
 .phone a {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .social {
@@ -1470,4 +1470,50 @@ img:nth-child(5) {
   height: 50px;
   margin: 15px;
   top: 0;
+}
+
+
+/* Blog */
+
+.navigation-1 {
+  padding-top: 1rem;
+  height: 70px;
+  background: hsl(0, 0%, 100%);
+  width: 100%;
+  z-index: 4;
+}
+.navigation-1 .nav-list a{
+  color: #000000;
+}
+
+.blog h1{
+  font-size: 50px;
+  color: #5d19ba;
+  font-weight: 900;
+  /* max-width: 75%; */
+}
+
+.blog p{
+  padding-top: 15px;
+  max-width: 70%;
+  padding-bottom: 50px;
+  font-size: small;
+}
+.blog h2{
+  font-size: 30px;
+}
+
+.blog{
+  padding-top: 50px;
+}
+
+.blog-intro{
+  font-size: small;
+}
+
+@media (max-width: 992px) {
+  .blog p {
+    max-width: 100%;
+    /* margin: 0 auto 5rem; */
+  }
 }
