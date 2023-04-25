@@ -1,0 +1,42 @@
+@media(max-width:1023px)
+{
+    .head{
+        padding-bottom: 3rem;
+    }
+
+    body{
+        margin-bottom: 3rem;
+    }
+}
+
+h1{
+    color: #5d19ba;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: xxx-large;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.table1{
+    overflow-x: auto; 
+    width :90%;
+    margin: 3rem;
+    font-family: 'Arial';
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+   
+  }
+td{
+    border-bottom: 1px solid #ddd;
+    height: 5rem;
+}
+  
+  /* tr:nth-child(even) {background-color: #f2f2f2;} */
