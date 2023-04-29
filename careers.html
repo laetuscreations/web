@@ -4,46 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="cardcss.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="shortcut icon" href="images/leatus-logo.svg" type="image/x-icon"/>
     <title>Laetus Creations</title>
+    <link rel="stylesheet" href="careerstyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link
+    rel="shortcut icon"
+    href="images/leatus-logo.svg"
+    type="image/x-icon"
+  />
 </head>
 <body>
-   
-  <div>
-    <div class="container">
-      <h1 class="head">Join Our Team As</h1>
-  
-<div class="table1">
-  <table>
-    <tr>
-      <th>Post</th>
-      <th>Type</th>
-    </tr>
-    <tr>
-      <td>Graphic Designer</td>
-      <td>Intern</td>
-      <td>See More</td>
-    </tr>
-    <tr>
-      <td>Content Writer</td>
-      <td>Intern</td>
-      <td>See More</td>
-      
-    </tr>
-    <tr>
-      <td>Videographer</td>
-      <td>Intern</td>
-      <td>See More</td>
-      
-    </tr>
-  </table>
-</div>
+    <section>
+        <div>
+            <h1>Laetus is Hiring</h1>
+        </div>
+    </section>
+    <section class="tableclass">
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label"><h2>Graphic Designer Intern</h2></div>
+                <div class="content">
+                    <h3>Experience Level : </h3>
+                    <h3>Stipend : 10k</h3>
+                    <h3>Due Date : </h3>
+                    <button class="full-rounded">
+                        <span>Apply Now</span>
+                        <div class="border full-rounded"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label"><h2>Content Writer Intern</h2></div>
+                <div class="content">
+                    <h3>Experience Level : </h3>
+                    <h3>Stipend : 10k</h3>
+                    <h3>Due Date : </h3>
+                    <button class="full-rounded">
+                        <span>Apply Now</span>
+                        <div class="border full-rounded"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label"><h2>Videographer Intern</h2></div>
+                <div class="content">
+                    <h3>Experience Level : </h3>
+                    <h3>Stipend : 10k</h3>
+                    <h3>Due Date : </h3>
+                    <button class="full-rounded">
+                        <span>Apply Now</span>
+                        <div class="border full-rounded"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-  </div>
+    <script>
+        const accordion = document.getElementsByClassName
+        ('contentBx');
 
+        for(i=0;i<accordion.length;i++)
+        {
+            accordion[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
 </body>
 </html>

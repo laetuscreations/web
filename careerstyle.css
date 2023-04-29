@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* .{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+} */
+body
+{
+    min-height: 100vh;
+    background: #fff;
+}
+h1{
+    text-align: center;
+    font-size: xxx-large;
+    color: #5d19ba;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    font-family: 'Arial';
+}
+@media(max-width:1023px)
+{
+    h1{
+        padding-top: 6rem;
+    }
+
+}
+
+.tableclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion
+{
+    width: 800px;
+    border-radius: 100px;
+}
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+    border-radius: 100px;
+    
+}
+.accordion .contentBx .label{
+    position: relative;
+    /* background-color: rgb(100, 100, 100); */
+    color: #0a0a0a;
+    cursor: pointer;
+    height: 4rem;
+    border-radius: 10px 10px 0px 0px;
+    border: solid #2c2c2c;
+    /* border-width: 3px 3px 0px 3px; */
+}
+.accordion .contentBx.active .label{
+    border-width: 3px 3px 0px 3px;
+
+}
+h2{
+    margin-left:20px;
+    font-family: 'arial';
+}
+
+.accordion .contentBx .label::before
+{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .contentBx.active .label::before{
+    content:'-'
+}
+.accordion .contentBx .content{
+    position: relative;
+    /* background-color: #999999; */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    overflow-y: auto;
+    
+}
+h3{
+    margin-left: 50px;
+    font-family: 'Inter';
+ }
+.accordion .contentBx.active .content{
+    height: 190px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    border: #2c2c2c solid;
+    border-width: 0px 3px 3px 3px;
+}
+
+button {
+    font-size: 13px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #797979;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+}
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button span {
+    color: #464646;
+   }
+   
+   button .border {
+    position: absolute;
+    border: 0.15em solid #797979;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+   }
+   
+   button:hover .border {
+    display: block;
+    width: 10.2em;
+    height: 3.7em;
+   }
+   
+   .full-rounded {
+    border-radius: 2em;
+   }
