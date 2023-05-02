@@ -10,7 +10,7 @@
 
 body{
   /* cursor: none; */
-  cursor: url('images/bubble.svg') 15 15, auto;
+  cursor: url('images/cursor.svg') 15 15, auto;
 }
 
 .hidden {
@@ -281,7 +281,7 @@ nav ul li ul li a {
   left: 18px;
   top: 22px;
   /* cursor: pointer; */
-  cursor: url('images/bubble.svg'), auto;
+  cursor: url('images/cursor.svg'), auto;
   padding: 10px 35px 16px 0px;
 }
 
@@ -289,7 +289,7 @@ nav ul li ul li a {
 #nav-toggle span:before,
 #nav-toggle span:after {
   /* cursor: pointer; */
-  cursor: url('images/bubble.svg'), auto;
+  cursor: url('images/cursor.svg'), auto;
   border-radius: 1px;
   height: 5px;
   width: 35px;
@@ -534,7 +534,7 @@ transform: scale(1.5) translateY(5rem);
   border-radius: 0 4rem 4rem 0;
   background-color: var(--primary-color);
   /* cursor: pointer; */
-  cursor: url('images/bubble.svg'), auto;
+  cursor: url('images/cursor.svg'), auto;
 }
 
 @media (min-width: 600px) {
@@ -812,7 +812,7 @@ section#projects .container {
   top: 50%;
   transform: translateY(-50%);
   /* cursor: pointer; */
-  cursor: url('images/bubble.svg'), auto;
+  cursor: url('images/cursor.svg'), auto;
   width: 4rem;
   z-index: 1;
 }
@@ -1156,7 +1156,7 @@ section#projects .container {
   border-radius: 1rem;
   background-color: #f5f5f5; */
   /* cursor: pointer; */
-  /* cursor: url('images/bubble.svg'), auto; */
+  /* cursor: url('images/cursor.svg'), auto; */
 } */
 
 /* .contact-form form button:hover,
@@ -1376,7 +1376,7 @@ section#projects .container {
   top: 50%;
   transform: translateY(-50%);
   /* cursor: pointer; */
-  cursor: url('images/bubble.svg'), auto;
+  cursor: url('images/cursor.svg'), auto;
   width: 4rem;
   z-index: 1;
 }
@@ -1506,6 +1506,7 @@ img:nth-child(5) {
 
 .blog{
   padding-top: 50px;
+  cursor: url('images/cursor-2.svg') 15 15, auto;
 }
 
 .blog-intro{
@@ -1518,3 +1519,6 @@ img:nth-child(5) {
     /* margin: 0 auto 5rem; */
   }
 }
+
+
+
